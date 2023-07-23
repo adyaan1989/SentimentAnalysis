@@ -1,0 +1,23 @@
+pyYAML
+tqdm
+py7zr
+boto3
+mypy-boto3-s3
+python-box==6.0.2
+ensure==1.0.2
+uvicorn==0.18.3
+Jinja2==3.1.2
+datasets
+numpy
+pandas
+nltk
+notebook
+tensorflow
+sklearn
+seaborn
+matplotlib
+scikit-learn
+catboost
+xgboost
+Flask
+-e .
