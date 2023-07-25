@@ -3,7 +3,7 @@ dataStore_root: dataStore
 data_ingestion:
 
   root_dir: dataStore/data_ingestion
-  source_url: https://github.com/adyaan1989/SentimentAnalysis/raw/main/IMDB_Dataset.zip
+  source_url: https://github.com/adyaan1989/datasetsforProjects/raw/main/IMDB_datasets.zip
   local_data_file: dataStore/data_ingestion/data.zip
   unzip_dir: dataStore/data_ingestion
 
