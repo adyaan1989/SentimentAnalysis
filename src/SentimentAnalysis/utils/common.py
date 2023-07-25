@@ -15,6 +15,7 @@ def read_yaml(yaml_path: Path) -> ConfigBox:
                 raise ValueError(f"YAML file is empty: {yaml_path}")
             logger.info(f"YAML file loaded successfully: {yaml_path}")
             return ConfigBox(content)
+        
     except FileNotFoundError:
         logger.error(f"YAML file not found: {yaml_path}")
         raise
