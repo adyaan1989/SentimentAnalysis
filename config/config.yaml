@@ -9,10 +9,12 @@ data_ingestion:
 
 
 
-# data_validation:
-#   root_dir: dataStore/data_validation
-#   STATUS_FILE: dataStore/data_validation/STATUS_FILE.txt
-#   ALL_REQUIRED_FILES: ["train","text","validation"]
+data_validation:
+
+  root_dir: dataStore/data_validation
+  STATUS_FILE: dataStore/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train","text","validation"]
+
 
 # Data_Transformation:
 #   root_dir: dataStore/Data_Transformation
