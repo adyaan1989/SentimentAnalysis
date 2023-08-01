@@ -20,13 +20,13 @@ except Exception as e:
     raise e
 
 
-STAGE_NAME = "Data Validation Stage"
+# STAGE_NAME = "Data Validation Stage"
 
-try:
-    logger.info(f"--->>-->>>-----> stage {STAGE_NAME} stared <<<<<<<<<<")
-    data_validation = DataValidationTrainingPipeline()
-    data_validation.main()
-    logger.info(f"....>>>>>>>.....stage {STAGE_NAME} completed <<<<<<< \n\nx==========x")
-except Exception as e:
-    logger.exception(e)
-    raise e
+# try:
+#     logger.info(f"--->>-->>>-----> stage {STAGE_NAME} stared <<<<<<<<<<")
+#     data_validation = DataValidationTrainingPipeline()
+#     data_validation.main()
+#     logger.info(f"....>>>>>>>.....stage {STAGE_NAME} completed <<<<<<< \n\nx==========x")
+# except Exception as e:
+#     logger.exception(e)
+#     raise e

@@ -1,0 +1,5 @@
+COLUMNS:
+  review: str
+
+TARGET_COLUMN:
+  name: sentiment

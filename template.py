@@ -21,13 +21,17 @@ list_of_files = [
     base_dir / f"src/{project_name}/constants/__init__.py",
     base_dir / "config/config.yaml",
     base_dir / "params.yaml",
+    base_dir / "schema.yaml",
     base_dir / "app.py",
     base_dir / "main.py",
     base_dir / "Dockerfile",
     base_dir / "requirements.txt",
     base_dir / "setup.py",
-    base_dir / "research/trails.ipynb"
+    base_dir / "research/trails.ipynb",
+    base_dir / "templates/index.html",
+    base_dir / "test.py"
 ]
+
 
 for filepath in list_of_files:
     filepath = Path(filepath)
