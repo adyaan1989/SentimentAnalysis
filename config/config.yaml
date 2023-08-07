@@ -6,18 +6,18 @@ data_ingestion:
   source_url: https://github.com/adyaan1989/datasetsforProjects/raw/main/IMDB_Datasetgit.zip
   local_data_file: dataStore/data_ingestion/data.zip
   unzip_dir: dataStore/data_ingestion
-  
-# data_cleanup:  
-#   row_data_file: dataStore/data_ingestion/IMDB_datasets/'imdb-train.csv'
-#   train_data_file: dataStore/data_ingestion/IMDB_datasets/'train.csv'
-#   test_data_file: dataStore/data_ingestion/IMDB_datasets/'test.csv'
 
 
 data_validation:
   root_dir: dataStore/data_validation
-  unzip_data_dir: dataStore/data_validation/data_ingestion/IMDB_Datasetgit.csv
+  unzip_data_dir: dataStore/data_ingestion/IMDB_Datasetgit.csv
   STATUS_FILE: dataStore/data_validation/status.txt
   
+ 
+# data_cleanup:  
+#   row_data_file: dataStore/data_ingestion/IMDB_datasets/'imdb-train.csv'
+#   train_data_file: dataStore/data_ingestion/IMDB_datasets/'train.csv'
+#   test_data_file: dataStore/data_ingestion/IMDB_datasets/'test.csv'
 
 
 # data_transformation:
