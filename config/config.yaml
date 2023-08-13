@@ -13,20 +13,34 @@ data_validation:
   unzip_data_dir: dataStore/data_ingestion/IMDB_Datasetgit.csv
   STATUS_FILE: dataStore/data_validation/status.txt
   
- 
-# data_cleanup:  
-#   row_data_file: dataStore/data_ingestion/IMDB_datasets/'imdb-train.csv'
-#   train_data_file: dataStore/data_ingestion/IMDB_datasets/'train.csv'
-#   test_data_file: dataStore/data_ingestion/IMDB_datasets/'test.csv'
+
+EDA_DataCleaner:
+  root_dir: dataStore/EDA_DataCleaner
+  data_path: dataStore/data_ingestion/IMDB_Datasetgit.csv
+  
+
+data_transformation:
+  root_dir: dataStore/data_transformation
+  clean_data_path: dataStore/EDA_DataCleaner/data.csv
+  tokenizer_path: tokenizer.joblib
+  
+model_trainer:
+  root_dir: dataStore/model_trainer
+  X_train_data_path: dataStore/data_transformation/X_train.npy
+  y_train_data_path: dataStore/data_transformation/y_train
+  X_test_data_path: dataStore/data_transformation/X_text.npy
+  y_test_data_path: dataStore/data_transformation/y_test
+  saved_model_path: model.joblib
 
 
-# data_transformation:
-#   root_dir: dataStore/data_transformation
-#   data_path: dataStore/data_ingestion/IMDB_DataSets
-#   stopwords_path: dataStore/stopowrd/nltk.download('punkt')
+model_evaluation:
+  root_dir: dataStore/model_evaluation # this would create the path inside datastore to save the evaluation
+  X_test_data_path: dataStore/data_transformation/X_text.npy
+  y_test_data_path: dataStore/data_transformation/y_test
+  model_path: dataStore/model_trainer/model.joblib # this pick the model from datastore
 
-
-# model_trainer:
-#   root_dir: dataStore/model_trainer
-#   data_path: dataStore/data_transformation/IMDB_DataSets
-
+model_prediction:
+  root_dir: dataStore/model_prediction # this would create the path inside datastore to save the evaluation
+  tokens_path: dataStore/data_transformation/tokenizer.joblib
+  final_model_path: dataStore/model_trainer/model.joblib # this pick the model from datastore
+  save_model_performance: dataStore/model_prediction

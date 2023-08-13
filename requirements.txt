@@ -8,8 +8,11 @@ ensure==1.0.2
 uvicorn==0.18.3
 Jinja2==3.1.2
 datasets
+joblib
 numpy
 pandas
+re
+bs4
 nltk
 notebook
 tensorflow

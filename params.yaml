@@ -1,1 +1,10 @@
-key: value
+model_parameters:
+  top_words: 10000
+  embedding_dim: 33
+  input_length: 300
+  rnn_state_size: 64
+  dropout: 0.25
+
+model_training_parameters:
+  epochs: 10
+  batch_size: 64  
